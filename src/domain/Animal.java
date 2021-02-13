@@ -1,28 +1,76 @@
 package domain;
 
-public class Animal {
+
+ /**
+ * The class Animal
+ */ 
+public class Animal  {
 
     protected String name;
+  
+
+    protected int height;
 
     protected int weight;
 
-    public Animal() {
-        name="generic animal";
-        weight=25;
+
+/** 
+ *
+ * It is a constructor. 
+ *
+ */
+    public Animal() { 
+
+        this.name = "An initialized animal";
+        this.height = 50;
+        this.weight = 20;
+    }
+    
+
+
+/** 
+ *
+ * Sleep
+ *
+ */
+    public void sleep() { 
+
+        System.out.println("Animal is sleeping");
     }
 
-    public void eat() {
-        System.out.println("Animal eating...");
+
+/** 
+ *
+ * Eat
+ *
+ */
+    public void eat() { 
+
+        System.out.println("Animal is eating");
     }
 
-    public void speak() {
-        System.out.println("Animal speaking...");
+
+/** 
+ *
+ * Walk
+ *
+ */
+    public void walk() { 
+
+        System.out.println("Animal is walking");
     }
 
     @Override
-    public String toString() {
-        return "My animal:" + "\nName:\t" + name + "\nWeight:\t" + weight+" kg";
-    }
 
- 
+/** 
+ *
+ * To string
+ *
+ * @return String
+ */
+    public String toString() { 
+
+        return "\nAnimal : " +  "\nName=\t" + name + " \nHeight=\t" + height + "\nWeight=\t" + weight;
+    }
+    
 }
